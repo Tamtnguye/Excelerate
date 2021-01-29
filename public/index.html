@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1> BCIT CST Selection Page</h1>
+
+    <form>
+        <label for="name">Enter Your Legal First Name:</label>
+        <input type="name" id="legal"
+       pattern="[A-Z][a-z]" size="120" placeholder="Legal First Name" required>
+    
+        <label for="name">Enter Your Prefer Name:</label>
+        <input type="name" id="prefer"
+       pattern="[A-Z][a-z]" size="120" placeholder="Prefer Name" required>
+    
+        <label for="name">Enter Your Legal Last Name:</label>
+        <input type="name" id="last"
+       pattern="[A-Z][a-z]" size="120" placeholder="Legal Last Name" required>
+    
+        <label for="name">Enter BCIT STUDENT ID:</label>
+        <input type="student" id="student"
+       pattern="^A+\d*" size="9" minlength="9" placeholder="A0" required>
+    
+        <label for="email">Enter your @my.bcit.ca /@bcit.ca email:</label>
+        <input type="email" id="email"
+       pattern=".+@my.bcit.ca | .+@bcit.ca" size="100" placeholder="JohnDoe@my.bcit.ca" required>
+    
+        <label for="set"> SET A,B,C,D,E,F,X,O:</label>
+        <input type="set" id="set"
+       pattern="^A|B|C|D|E|F|X|O" size="1" maxlength="1" placeholder="E" required>
+
+       <label for="set"> SET A,B,C,D,E,F,X,O:</label>
+       <select name="set" id="set">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="X">X</option>
+        <option value="O">O</option>
+      </select>
+    </form>
+
+</body>
+</html>
