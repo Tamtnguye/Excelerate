@@ -5,6 +5,9 @@
 h1{
     margin: 2vw;
 }
+h2{
+    margin: 2vw;
+}
 form{
     margin-left: 2vw;
 }
@@ -31,4 +34,8 @@ input[type=email]{
     margin: 2px;
     flex-direction: column;
 
+}
+
+select{
+    margin: 2vw;
 }
